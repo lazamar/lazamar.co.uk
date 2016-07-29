@@ -4,7 +4,8 @@
   "description": "My node website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sh startup.sh"
   },
   "author": "lazamar - Marcelo Lazaroni",
   "license": "ISC",
