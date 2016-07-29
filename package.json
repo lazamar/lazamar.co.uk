@@ -1,0 +1,11 @@
+{
+  "name": "node_hosting",
+  "version": "1.0.0",
+  "description": "My node website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lazamar - Marcelo Lazaroni",
+  "license": "ISC"
+}
