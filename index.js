@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const http = require('http').Server(app); // eslint-disable-line new-cap
 
-const PORT = 8080;
+const PORT = 80;
 
 // Serve static files from root
 app.use(express.static('static'));
