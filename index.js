@@ -1,22 +1,22 @@
 /* eslint-env node */
 
 // Libraries
+const fs = require('fs');
+const http = require('http');
+const https = require('https');
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/lazamar.co.uk/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/lazamar.co.uk/cert.pem', 'utf8');
+
+const credentials = { key: privateKey, cert: certificate };
 const express = require('express');
 const app = express();
-const https = require('https');
-const fs = require('fs');
 
-const options = {
-  key: fs.readFileSync('/etc/letsencrypt/live/lazamar.co.uk/privkey.pem'),
-  cert: fs.readFileSync('test/fixtures/keys/cert.pem'),
-};
+// your express configuration here
 
-const PORT = 80;
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
 
-// Serve static files from root
-app.use(express.static('static'));
+httpServer.listen(80);
+httpsServer.listen(443);
 
-
-https.createServer(options, app).listen(PORT, () => {
-  console.log(`Listening on ${PORT}`);
-});
+app.use(express.static('./static'));
