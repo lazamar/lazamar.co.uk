@@ -4,8 +4,8 @@
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/lazamar.co.uk/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/lazamar.co.uk/cert.pem', 'utf8');
+const privateKey = fs.readFileSync('/.ssl/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/.ssl/cert.pem', 'utf8');
 
 const credentials = { key: privateKey, cert: certificate };
 const express = require('express');
