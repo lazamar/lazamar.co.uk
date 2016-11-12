@@ -37,5 +37,6 @@ if (process.env.NODE_ENV !== 'development') {
   `));
 }
 
-
+const silverMagpie = require('silver-magpie-backend');
+app.use('/silver-magpie', silverMagpie);
 app.use(express.static('./static'));
