@@ -14,6 +14,6 @@
   "dependencies": {
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
-    "silver-magpie-backend": "git+https://github.com/lazamar/silver-magpie-backend.git"
+    "silver-magpie-backend": "git+https://github.com/lazamar/silver-magpie-backend.git#7b4cc5115aaff3a6853be365586965cf95629009"
   }
 }
