@@ -8,4 +8,4 @@ ps -x |
  xargs -0 bash -c
 
 # Start a new server process in the background
-node index.js &
+nohup node index.js &
