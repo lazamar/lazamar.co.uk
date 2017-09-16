@@ -4,7 +4,8 @@
     "description": "My node website",
     "main": "index.js",
     "scripts": {
-        "start": "nohup forever index.js &"
+        "start": "forever index.js",
+        "stop": "forever stopall"
     },
     "author": "lazamar - Marcelo Lazaroni",
     "license": "ISC",
