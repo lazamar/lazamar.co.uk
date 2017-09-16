@@ -1,19 +1,17 @@
 {
-  "name": "node_hosting",
-  "version": "1.0.0",
-  "description": "My node website",
-  "main": "index.js",
-  "scripts": {
-    "postinstall": "sh scripts/update-silver-magpie.sh",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sh scripts/startup.sh",
-    "ssl": "sh scripts/copy-ssl-certificates.sh"
-  },
-  "author": "lazamar - Marcelo Lazaroni",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^2.0.0",
-    "express": "^4.14.0",
-    "silver-magpie-backend": "git+https://github.com/lazamar/silver-magpie-backend.git#75537f2539354c2ce349dc4530864fd40ad86511"
-  }
+    "name": "node_hosting",
+    "version": "1.0.0",
+    "description": "My node website",
+    "main": "index.js",
+    "scripts": {
+        "start": "nohup forever index.js &"
+    },
+    "author": "lazamar - Marcelo Lazaroni",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^2.0.0",
+        "express": "^4.14.0",
+        "forever": "^0.15.3",
+        "silver-magpie-backend": "git+https://github.com/lazamar/silver-magpie-backend.git#75537f2539354c2ce349dc4530864fd40ad86511"
+    }
 }
