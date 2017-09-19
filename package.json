@@ -4,7 +4,7 @@
     "description": "My node website",
     "main": "index.js",
     "scripts": {
-        "start": "index.js"
+        "start": "node index.js"
     },
     "author": "lazamar - Marcelo Lazaroni",
     "license": "ISC",
