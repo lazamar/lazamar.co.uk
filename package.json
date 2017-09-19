@@ -4,15 +4,12 @@
     "description": "My node website",
     "main": "index.js",
     "scripts": {
-        "start": "forever index.js",
-        "stop": "forever stopall"
+        "start": "index.js"
     },
     "author": "lazamar - Marcelo Lazaroni",
     "license": "ISC",
     "dependencies": {
         "dotenv": "^2.0.0",
-        "express": "^4.14.0",
-        "forever": "^0.15.3",
-        "silver-magpie-backend": "git+https://github.com/lazamar/silver-magpie-backend.git#75537f2539354c2ce349dc4530864fd40ad86511"
+        "express": "^4.14.0"
     }
 }
